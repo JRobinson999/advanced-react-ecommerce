@@ -31,7 +31,8 @@ export default function Products() {
         : fetchProductsByCategory(category),
   });
 
-  if (isLoading) return <p style={{ padding: 16 }}>Loading products…</p>;
+  if (isLoading) return <p style={{ padding: 16 }}>Loading products...</p>;
+
   if (isError)
     return (
       <p style={{ padding: 16, color: "tomato" }}>Error loading products.</p>
@@ -66,7 +67,7 @@ export default function Products() {
           <article
             key={p.id}
             style={{
-              background: "#1f2937",
+              background: "#375175",
               color: "white",
               padding: 12,
               borderRadius: 8,
@@ -81,10 +82,19 @@ export default function Products() {
                 objectFit: "contain",
                 background: "white",
               }}
-              onError={(e) => (e.currentTarget.src = fallbackImg)}
+              onError={(e) => {
+                e.currentTarget.src = fallbackImg;
+              }}
             />
+
             <h3 style={{ fontSize: 16, marginTop: 8 }}>{p.title}</h3>
+
             <p style={{ opacity: 0.85, minHeight: 40 }}>{p.category}</p>
+
+            <p style={{ fontSize: 12, opacity: 0.85 }}>
+              {p.description?.slice(0, 90)}...
+            </p>
+
             <p style={{ fontWeight: "bold" }}>${p.price}</p>
 
             <p style={{ fontSize: 12, opacity: 0.8 }}>
@@ -99,7 +109,7 @@ export default function Products() {
                     title: p.title,
                     price: p.price,
                     image: p.image,
-                  })
+                  }),
                 )
               }
               style={{ marginTop: 8 }}

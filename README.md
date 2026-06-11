@@ -1,12 +1,24 @@
-# React + Vite
+Introduction
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+“Hi, my name is Jazmin Robinson, and this is my Advanced React project. It’s a shopping web app where you can browse products, filter them, and add them to a cart.”
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+“On the home page, products are listed with their name, price, and picture. If the picture doesn’t load, a backup one shows instead.”
 
-## Expanding the ESLint configuration
+“You can filter products by category using a dropdown menu.”
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+“I created a shopping cart where you can add products, change the amount, or clear the cart.”
+
+“The cart updates right away to show how many items and the total cost.”
+
+“Checkout clears the cart and confirms the order.”
+
+Closing
+
+
+“This project shows how I used React and some helpful tools to build a working shopping experience with product display, filtering, and cart management.”
+
+
+
+
